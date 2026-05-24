@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { supabase } from "../supabase";
 import Loader from "./components/Loader";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -11,6 +12,19 @@ import Footer from "./components/Footer";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const getMessages = async () => {
+      const { data, error } = await supabase
+        .from("messages")
+        .select("*");
+
+      console.log(data);
+      console.log(error);
+    };
+
+    getMessages();
+  }, []);
 
   return (
     <div className="relative min-h-screen bg-[#050609] selection:bg-cyber-blue/30 selection:text-white overflow-x-hidden antialiased">
