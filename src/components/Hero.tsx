@@ -45,7 +45,7 @@ export default function Hero() {
         <Sparkles className="w-3.5 h-3.5 animate-spin" /> IA ENGAGED
       </div>
     </div>
-      <div className="absolute top-1/3 left-10 md:left-24 animate-bounce duration-[4000ms] opacity-40 pointer-events-none z-0">
+      <div className="absolute top-10 right-8 md:right-28 animate-pulse duration-[3000ms] opacity-40 pointer-events-none z-0">
         <div className="flex items-center gap-1.5 p-2 bg-black/60 rounded-xl border border-cyber-green/30 text-[10px] text-cyber-green font-mono">
           <Server className="w-3.5 h-3.5" /> HOSTING 24/7
         </div>
