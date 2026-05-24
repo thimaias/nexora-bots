@@ -1,0 +1,6 @@
+{
+  "name": "Nexora Bots",
+  "description": "Premium discord bots, advanced automation, AI-driven solutions and 24/7 hosting with futuristic design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
